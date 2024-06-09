@@ -101,3 +101,30 @@ body {
     border-right: 5px solid transparent;
     border-top: 5px solid white;
 }
+
+
+/* responsiveness media query */
+
+@media(max-width: 768px){
+    .thumbnail > div h2,
+    .thumbnail > div span,
+    .thumbnail > div .hover-content {
+        display: none;
+    }
+    
+    .thumbnail > div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail > div {
+        width: 100%;
+    }
+    .thumbnail > div h2,
+    .thumbnail > div span,
+    .thumbnail > div .hover-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+} 
