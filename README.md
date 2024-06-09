@@ -41,7 +41,7 @@ Use a modern web browser that supports HTML5 and CSS3.
 2. **Navigate to the photo gallery project directory:**
 
     ```bash
-    cd challenges
+    cd cao-takehomechallenge
     cd photoGallery
     cd view
     ```
@@ -85,7 +85,7 @@ You can customize the photo gallery by modifying the `index.html` and `styles.cs
 
 ## Implementation of String Transform
 
-The textual modification functionality was actualized employing JavaScript. The `transformString` function  within the JavaScript document executes the transformation in accordance with the stipulated guidelines.
+The textual modification functionality was actualized employing JavaScript. The `stringTransform` function  within the JavaScript document executes the transformation in accordance with the stipulated guidelines.
 
 ## Credits
 
