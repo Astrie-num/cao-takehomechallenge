@@ -3,7 +3,9 @@
 
 ## Overview
 
-The Interractive photo gallery is a visually stunning, responsive application that showcases a curated collection of enchanting animal photographs. Each image is accompanied by its title and location details. The true magic happens upon hovering over the thumbnails which reveals additional information about the particular animal, fostering a deeper connection between the viewer and the natural world.
+The Interractive photo gallery is a visually stunning, responsive application that showcases a curated collection of enchanting animal photographs.
+Each image is accompanied by its title and location details. The true magic happens upon hovering over the thumbnails which reveals additional information about the particular animal,
+fostering a deeper connection between the viewer and the natural world.
 
 ### Features
 
@@ -85,12 +87,22 @@ You can customize the photo gallery by modifying the `index.html` and `styles.cs
 
 ## Implementation of String Transform
 
-The textual modification functionality was actualized employing JavaScript. The `stringTransform` function  within the JavaScript document executes the transformation in accordance with the stipulated guidelines.
+The `transformString` function takes a string as input and performs the following transformations:
+
+    1. It removes all whitespace characters from the input string using the `replace` method with a regular expression `/\s+/g`.
+    2. It checks if the length of the string is divisible by 3 without a remainder. If true, it reverses the entire string.
+    3. It checks if the length of the string is divisible by 5 without a remainder. If true, it replaces each character with its ASCII code and joins them with spaces.
+    4. The transformed string is then returned.
+    The function is then tested with a few sample inputs, and the output is logged to the console.
+
+
 
 
 ## Implementation of Array Manipulation
 
-The `hasSubarrayWithTarget` function uses the sliding window technique to check if there exists a subarray within the given array `array` that sums up to the `target` value target. The function iterates through the array, maintaining a window (defined by `start` and `end` pointers) and the current sum `sum`. If the sum exceeds the target, the window is decreased by moving the `start` pointer forward until the sum is less than or equal to the target. If the sum equals the target, the function returns `true`. If no such subarray is found, the function returns `false`.
+The `hasSubarrayWithTarget` function uses the sliding window technique to check if there exists a subarray within the given array `array` that sums up to the `target` value target.
+The function iterates through the array, maintaining a window (defined by `start` and `end` pointers) and the current sum `sum`. If the sum exceeds the target, the window is decreased by moving the `start` pointer 
+forward until the sum is less than or equal to the target. If the sum equals the target, the function returns `true`. If no such subarray is found, the function returns `false`.
 ## Credits
 
 - Fonts provided by [Google Fonts](https://fonts.google.com/).
