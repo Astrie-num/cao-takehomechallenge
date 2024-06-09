@@ -69,3 +69,35 @@ body {
 .thumbnail > div h2 {
     bottom: 4em;
 }
+
+.thumbnail > div span#country {
+    bottom: 5.2em;
+}
+
+.thumbnail > div:hover h2,
+.thumbnail > div:hover span#country {
+    transform: translateY(-20px);
+}
+
+.thumbnail > div .hover-content {
+    position: absolute;
+    bottom: 3.5em;
+    left: 20px;
+    color: aqua;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.thumbnail > div:hover .hover-content {
+    opacity: 1;
+}
+
+.arrow-icon {
+    margin-left: 7em;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+}
